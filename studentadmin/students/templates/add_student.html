@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assingment</title>
+  </head>
+  <body>
+    <form method="POST">
+      {% csrf_token %}
+      <div>
+        <label for="name">Student Name:</label>
+        <input type="text" name="name" id="name" />
+      </div>
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" id="dob" />
+      </div>
+      <div>
+        <label for="physics_marks">Physics Marks:</label>
+        <input
+          type="number"
+          name="physics_marks"
+          id="physics_marks"
+          min="0"
+          max="100"
+        />
+      </div>
+      <div>
+        <label for="chemistry_marks">Chemistry Marks:</label>
+        <input
+          type="number"
+          name="chemistry_marks"
+          id="chemistry_marks"
+          min="0"
+          max="100"
+        />
+      </div>
+      <div>
+        <label for="maths_marks">Maths Marks:</label>
+        <input
+          type="number"
+          name="maths_marks"
+          id="maths_marks"
+          min="0"
+          max="100"
+        />
+      </div>
+      <div>
+        <label for="cs_marks">Computer Science Marks:</label>
+        <input type="number" name="cs_marks" id="cs_marks" min="0" max="100" />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
